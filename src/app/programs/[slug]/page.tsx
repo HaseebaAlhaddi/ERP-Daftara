@@ -24,6 +24,13 @@ export default function ProgramPage({ params }: { params: { slug: string } }) {
     }
     return (
         <>
+        <head>
+            <title>دفترة - {decodedSlug}</title>
+            <meta name="description" content={`دفترة - ${decodedSlug}`} />
+            <meta name="keywords" content={`دفترة, ${decodedSlug}, نظام ERP, متكامل, إدارة أعمال, تطبيقات إدارة, تطبيقات ERP, تطبيقات إدارة الأعمال, تطبيقات ERP المتكاملة, تطبيقات إدارة الأعمال المتكاملة, تطبيقات ERP المتكاملة`} />
+            <meta name="author" content="دفترة" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </head>
             <Header />
             <section className="w-full py-24 ">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">

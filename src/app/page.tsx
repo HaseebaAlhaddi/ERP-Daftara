@@ -10,6 +10,14 @@ import { DownloadSection } from "@/components/downloadSection"
 
 export default function HomePage() {
   return (
+    <>
+    <head>
+      <title>دفترة - نظام ERP متكامل لإدارة كافة أعمالك</title>
+      <meta name="description" content="دفترة - نظام ERP متكامل لإدارة كافة أعمالك" />
+      <meta name="keywords" content="دفترة, نظام ERP, متكامل, إدارة أعمال, تطبيقات إدارة, تطبيقات ERP, تطبيقات إدارة الأعمال, تطبيقات ERP المتكاملة, تطبيقات إدارة الأعمال المتكاملة, تطبيقات ERP المتكاملة" />
+      <meta name="author" content="دفترة" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
     <div className="min-h-screen w-full">
       <Header />
       <main>
@@ -32,5 +40,6 @@ export default function HomePage() {
       </main>
       <Footer />
     </div>
+    </>
   )
 }
