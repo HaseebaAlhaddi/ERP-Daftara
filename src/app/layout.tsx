@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Noto_Kufi_Arabic } from 'next/font/google';
+
+const notoKufi = Noto_Kufi_Arabic({
+  subsets: ['arabic'],
+  weight: ['400', '700'], // اختَر الأوزان اللي تحتاجها
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,12 +29,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+       className={notoKufi.className}
       >
         {children}
       </body>
     </html>
   );
 }
+
+
