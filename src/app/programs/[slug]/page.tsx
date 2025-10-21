@@ -67,7 +67,7 @@ export default function ProgramPage({ params }: { params: { slug: string } }) {
                             </div>
                         </div>
                         {index === 0 && (
-                            <div className="mt-8 bg-primary text-white p-4 rounded-3xl flex items-center justify-center gap-12 ">
+                            <div className="mt-8 bg-primary text-white p-4 rounded-3xl flex flex-col md:flex-row md:gap-12 items-center justify-center gap-2 ">
                                 <div className="flex-[3] space-y-4 mt-10 ">
                                     <h2 className="text-2xl font-bold mr-10">نظام متكامل قابل للتخصيص ليناسب أكثر من 50 مجالًا مختلفًا</h2>
                                     <p className="mb-4 mr-10">مكانية تخصيص نظام دفترة حسب مجال عملك بما في ذلك التطبيقات المضمَّنة وتصميمات الواجهة لتحقيق أهداف أعمالك.</p>

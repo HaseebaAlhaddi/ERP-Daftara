@@ -30,7 +30,6 @@ export default function HomePage() {
         <GreenSection/>
         <DownloadSection />
       </main>
-    
       <Footer />
     </div>
   )
