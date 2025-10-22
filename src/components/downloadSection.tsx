@@ -8,8 +8,8 @@ const downloadContent = {
   image: {
     src: "/download-img.webp",
     alt: "دفترة على جميع الأجهزة",
-    width: 640,
-    height: 420
+    width: 900,
+    height: 600
   }
 }
 
@@ -38,7 +38,7 @@ export function DownloadSection() {
   return (
     <section className="w-full py-20 px-4 sm:px-6 lg:px-0">
       <div className="max-w-6xl mx-auto container flex flex-col md:flex-row gap-10 items-center">
-        <div className="flex flex-col items-start  gap-5 w-1/2">
+        <div className="flex flex-col flex-1 items-start gap-5 w-full md:w-1/2">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mr-3">
             {downloadContent.title}
           </h2>
@@ -62,15 +62,17 @@ export function DownloadSection() {
             })}
           </div>
         </div>
-        <div >
-          <Image
-            src={downloadContent.image.src}
-            alt={downloadContent.image.alt}
-            width={downloadContent.image.width}
-            height={downloadContent.image.height}
-            className="w-full max-w-[560px] h-auto"
-            priority
-          />
+        <div className="flex-1">
+          <div className="w-full h-auto">
+            <Image
+              src={downloadContent.image.src}
+              alt={downloadContent.image.alt}
+              width={downloadContent.image.width}
+              height={downloadContent.image.height}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>
