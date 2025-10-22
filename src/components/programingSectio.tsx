@@ -85,7 +85,7 @@ export function ProgramingSection() {
                   <span className="text-sm font-medium opacity-80">{card.type}</span>
                   {renderIconForType(card.type)}
                 </div>
-                <p className="text-3xl font-semibold text-gray-900 leading-snug">{card.text}</p>
+                <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-900 leading-snug">{card.text}</p>
                 <Button variant="outline" className="border-2 rounded-full px-6 py-5 text-gray-900 hover:bg-primary">
                   استكشف البرنامج
                 </Button>
