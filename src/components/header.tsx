@@ -11,8 +11,8 @@ const programingMenu=[
     title:"المبيعات ",
     links:[
      "المبيعات",
-     " الفواتير وعروض الأسعار",
-     " نقاط البيع",
+     "الفواتير وعروض الأسعار",
+     "نقاط البيع",
      "   العروض",
      "   الأقساط",
      "  المبيعات المستهدفة والعمولات",
@@ -97,9 +97,11 @@ const programingMenu=[
 
 // Function to generate program URLs
 const getProgramUrl = (link: string) => {
-  const mainCategories = ["المبيعات", "العملاء", "المخزون", "الحسابات", "شؤون الموظفين", "التشغيل", "تطبيقات الجوال"]
+  // Extract all links from programingMenu
+  const mainCategories = programingMenu.flatMap(section => section.links)
+  console.log(mainCategories)
   if (mainCategories.includes(link.trim())) {
-    return `/programs/${link.trim()}`
+    return `/programs/${encodeURIComponent(link.trim())}`
   }
   return "/"
 }

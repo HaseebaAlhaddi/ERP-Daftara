@@ -36,7 +36,7 @@ export default function ProgramPage({ params }: { params: { slug: string } }) {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
                 {program.sections.map((section, index) => (
                     <>
-                        <div key={index} className={`flex gap-8 flex-col md:flex-row items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+                        <div key={index} className={`flex gap-8 flex-col md:flex-row items-center ${index % 2 === 0 && index !== 0 ? 'md:flex-row-reverse' : ''}`}>
                             <div className="flex-1">
                             <h1 className="text-4xl font-bold mb-4">{section.title}</h1>
                             <p className="text-gray-600 mb-4 text-pretty">{section.description}</p>
@@ -70,7 +70,7 @@ export default function ProgramPage({ params }: { params: { slug: string } }) {
                         )}
                             </div>
                             <div className="flex-1">
-                                <Image src={`/${section.icon}`} alt={section.title} width={350} height={100} />
+                                <Image src={`/${section.icon || 'placeholder.png'}`} alt={section.title || 'Program feature'} width={350} height={100} />
                             </div>
                         </div>
                         {index === 0 && (

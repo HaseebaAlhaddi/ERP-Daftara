@@ -69,7 +69,7 @@ function renderIconForType(type: string) {
 
 export function ProgramingSection() {
   return (
-    <section className="w-full py-16 bg-muted/40">
+    <section className="w-full py-16 bg-muted/40 px-4 sm:px-6 lg:px-0">
       <div className="container max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {cards.map((card, idx) => (

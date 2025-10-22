@@ -17,10 +17,10 @@ const footerSections = [
   {
     title: "دليل الموقع",
     links: [
-     " تسجيل حساب",
-     "تسجيل الدخول",
-     "الأسعار",
-     "تواصل معنا",
+     {text: " تسجيل حساب", href: "/singUp"},
+     {text: "تسجيل الدخول", href: "/login"},
+     {text: "الأسعار", href: "/pricing"},
+     {text: "تواصل معنا", href: "/contectUs"},
      "برنامج الربح والشراكة",
      "شركاء النجاح",
      "برنامج الوكلاء",
@@ -81,10 +81,10 @@ export function Footer() {
                 {section.links.map((link, i) => (
                   <li key={i}>
                     <Link
-                      href="#"
+                      href={typeof link === 'string' ? '#' : link.href}
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                     >
-                      {link}
+                      {typeof link === 'string' ? link : link.text}
                     </Link>
                   </li>
                 ))}

@@ -30,10 +30,10 @@ const plans = [
 
 export function PricingSection() {
   return (
-    <section className=" w-full py-24 bg-muted">
+    <section className=" w-full py-24 bg-muted px-4 sm:px-6 lg:px-0">
       <div className="container max-w-6xl mx-auto ">
         <div className="text-center space-y-4 mb-5">
-          <h2 className="text-2xl lg:text-5xl text-center  lg:text-4xl font-bold text-balance">
+          <h2 className="text-2xl lg:text-5xl text-center font-bold text-balance">
           ابــــداً
           <span className="text-primary px-2">مــــجـاناً</span>
           واخــــتــــر خـطتك لاحــــقاً

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="relative z-0 w-full overflow-hidden my-10 ">
+    <section className="relative z-0 w-full overflow-hidden my-10 px-4 sm:px-6 lg:px-0">
       {/* Background Image */}
       
       <div className=" max-w-6xl mx-auto   relative h-[500px] md:h-[600px] flex justify-start items-center relative rounded-xl overflow-hidden">

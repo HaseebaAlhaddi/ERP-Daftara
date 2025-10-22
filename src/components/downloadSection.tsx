@@ -36,7 +36,7 @@ const storeButtons = [
 
 export function DownloadSection() {
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20 px-4 sm:px-6 lg:px-0">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="flex flex-col items-start  gap-5">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mr-3">
