@@ -37,8 +37,8 @@ const storeButtons = [
 export function DownloadSection() {
   return (
     <section className="w-full py-20 px-4 sm:px-6 lg:px-0">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="flex flex-col items-start  gap-5">
+      <div className="max-w-6xl mx-auto container flex flex-col md:flex-row gap-10 items-center">
+        <div className="flex flex-col items-start  gap-5 w-1/2">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mr-3">
             {downloadContent.title}
           </h2>

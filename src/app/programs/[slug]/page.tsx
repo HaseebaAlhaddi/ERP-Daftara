@@ -14,7 +14,7 @@ export default function ProgramPage({ params }: { params: { slug: string } }) {
     if (!program) {
         return (
             <div className="w-full py-24">
-                <div className="max-w-6xl mx-auto px-4 text-center">
+                <div className="container mx-auto px-4 text-center">
                     <h1 className="text-2xl font-bold mb-4">Program not found</h1>
                     <p className="text-gray-600 mb-4">Slug: {decodedSlug}</p>
                     <p className="text-gray-600">Available programs: {Object.keys(programs).join(', ')}</p>
@@ -38,8 +38,8 @@ export default function ProgramPage({ params }: { params: { slug: string } }) {
                     <>
                         <div key={index} className={`flex gap-8 flex-col md:flex-row items-center ${index % 2 === 0 && index !== 0 ? 'md:flex-row-reverse' : ''}`}>
                             <div className="flex-1">
-                            <h1 className="text-4xl font-bold mb-4">{section.title}</h1>
-                            <p className="text-gray-600 mb-4 text-pretty">{section.description}</p>
+                            <h1 className="text-4xl font-bold mb-4 mr-6">{section.title}</h1>
+                            <p className="text-gray-600 mb-4 text-pretty mr-6">{section.description}</p>
                             {index === 0 && (
                                 <>
                                     <div className="flex gap-4 mt-6">
